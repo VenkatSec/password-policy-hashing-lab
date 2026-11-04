@@ -1,8 +1,25 @@
-
+# Python artifacts
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+
+# Local configuration and secrets
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.der
+*.p12
+*.pfx
+
+# Local reports and logs
+reports/
+*.log
+
+# Editor and operating-system files
 .vscode/
+.idea/
 .DS_Store
+Thumbs.db
