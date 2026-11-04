@@ -1,8 +1,6 @@
-
 # Password Policy and Hashing Lab
 
-A Python-based cybersecurity lab demonstrating password policy
-validation, secure password hashing, and password verification.
+A Python-based cybersecurity lab demonstrating password policy validation, secure password hashing, and password verification.
 
 ## Objectives
 
@@ -30,16 +28,16 @@ The lab checks for:
 - At least one number
 - At least one special character
 
-These are the rules used in this educational exercise, not a
-universal security standard.
+These are the rules used in this educational exercise, not a universal security standard.
 
 ## How It Works
 
-1. The user enters a test password through hidden terminal input.
+1. The user enters a fictional test password through hidden terminal input.
 2. The program checks the password policy.
 3. A valid password is hashed using scrypt with a random salt.
-4. The program verifies a second password against the hash.
-5. The result is displayed without saving the plaintext password.
+4. The generated hash remains in memory for the verification demonstration and is not printed.
+5. The program verifies a second password against the hash.
+6. The result is displayed without saving plaintext credentials or derived password material.
 
 ## Run the Lab
 
@@ -49,7 +47,7 @@ python password_lab.py
 
 On Windows, you can also use:
 
-```bash
+```powershell
 py password_lab.py
 ```
 
@@ -63,16 +61,14 @@ python -m unittest -v
 
 - Use only fictional test passwords.
 - Do not enter personal or reused passwords.
-- This project does not save credentials to a file or database.
-- Password hashing is different from encryption: hashes are not
-  intended to be decrypted.
+- This project does not save credentials or password hashes to a file or database.
+- The generated hash is kept in memory and redacted from terminal output.
+- Password hashing is different from encryption: hashes are not intended to be decrypted.
 - This is an educational project, not a production login system.
 
 ## Learning Outcome
 
-This project demonstrates basic defensive security concepts
-related to password policies, salted password hashing, and
-credential verification.
+This project demonstrates basic defensive security concepts related to password policies, salted password hashing, and credential verification.
 
 ## Disclaimer
 
