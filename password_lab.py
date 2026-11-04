@@ -1,4 +1,3 @@
-
 import hashlib
 import hmac
 import secrets
@@ -114,8 +113,8 @@ def main():
 
     stored_hash = hash_password(password)
 
-    print("\nGenerated password hash:")
-    print(stored_hash)
+    # Keep derived password material out of terminal logs and screenshots.
+    print("\nPassword hash generated (value redacted).")
 
     print("\nVerification test")
     candidate = getpass.getpass("Re-enter the test password: ")
